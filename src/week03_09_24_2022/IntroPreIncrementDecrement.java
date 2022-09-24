@@ -27,7 +27,7 @@ public class IntroPreIncrementDecrement {
 
         int number2=++x +100; //112
         System.out.println("number2 = " + number2);
-
+// you can search debug
     }
 
 }
