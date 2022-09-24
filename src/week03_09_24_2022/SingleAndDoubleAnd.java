@@ -21,6 +21,5 @@ public class SingleAndDoubleAnd {
 
         System.out.println("b = " + b);
 
-
     }
 }
