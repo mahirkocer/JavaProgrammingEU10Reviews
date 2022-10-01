@@ -33,39 +33,7 @@ if:        (Condition)?
 else:                 :
 else if:   :(Condition)?
 
-========================================
-Switch Statement
 
-Switch Statement: switch, case, default, break
-
-syntax:
-
-switch(Data){
-       case data1:
-
-        Statements; 
-        break;
-
-       case data2:
-
-       Statements;
-       break;
-
-       default:
-
-       Statements;
-       break;
-}
-
-
-- Case value MUST match with switch' data type and UNIQUE
-- Switch' Data can not be long, float, double and boolean data types
-- break: used for exiting the switch.
-  ** if we don't give the break statement, switch statement continue to execute the next block(s) until the break statement 
-
-- default block gets executed if none of the case blocks matched. there can only be ONE DEFAULT block  
-
-==================================
 
 Scanner
 
@@ -88,7 +56,39 @@ Scanner methods:
 
 
 ***** if we are using nextLine() method after the other methods of scanner, we MUST provide one addition nextLine()
+========================================
+Switch Statement
 
+Switch Statement: switch, case, default, break
+
+syntax:
+
+switch(Data){
+       case data1:
+
+        Statements;
+        break;
+
+       case data2:
+
+       Statements;
+       break;
+
+       default:
+
+       Statements;
+       break;
+}
+
+
+- Case value MUST match with switch' data type and UNIQUE
+- Switch' Data can not be long, float, double and boolean data types
+- break: used for exiting the switch.
+  ** if we don't give the break statement, switch statement continue to execute the next block(s) until the break statement
+
+- default block gets executed if none of the case blocks matched. there can only be ONE DEFAULT block
+
+==================================
 
 Tasks: 
 
