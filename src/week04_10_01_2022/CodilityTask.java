@@ -26,7 +26,7 @@ public class CodilityTask {
     public static void main(String[] args) {
 
         // we will get one number from the user(create a variable ) positive
-        int number = 6;
+        int number = 30;
 
         // we will create a varible in order to put our result in it
         String result = "";
@@ -51,7 +51,7 @@ public class CodilityTask {
 
 
         } else {
-            System.out.println("invalid or the number is not divisible by 2 or 3 or 5");
+            result="invalid or the number is not divisible by 2 or 3 or 5";
         }
 
         System.out.println("result = "+ result);
