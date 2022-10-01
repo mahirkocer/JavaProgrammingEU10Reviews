@@ -44,9 +44,10 @@ in order to use it:
 Needs to create an object from Scnanner
 
 Syntax: 
-Scanner variableName = new Scanner(System.in);
+Scanner referenceName = new Scanner(System.in);
 
 Scanner methods:
+
 	* nextInt() :in order to get int value from user as input
 	* nextDouble() :in order to get double value from user as input
 	* nextBoolean() :in order to get boolean value from user as input
