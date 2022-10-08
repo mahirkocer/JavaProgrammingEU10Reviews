@@ -129,32 +129,6 @@ Warm Up Task :
      * encrypt with char :x
      * output:cxyxdxexox
 
-Task 10: Given a non-empty string like "Code" print a string like below output.
-
- *                                 Code → "CCoCodCode"
- *                                 abc → "aababc"
- *                                 ab → "aab"
-
-
-Task 11: Given a sentence which is string find word how many times repeats in it.
-
-Hint: use substring with loop
-
-input:
-*                                String str="Java is java in everywhere is Java";
-*                                String word="Java";
-output:3
-
-
-
-
-
-
-
-
-
-
-
           
 
 
