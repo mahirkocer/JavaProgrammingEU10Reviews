@@ -45,6 +45,17 @@ public class StringMethods {
         String sentence1="Java is Java";
         System.out.println(sentence1.indexOf("Java")); // return me 0
         System.out.println(sentence1.lastIndexOf("Java")); //return me 8
+        // if we want to replace some part of the string we need to use replace() or replaceFirst()
+        
+        String sentence3="Java is a hard prog language";
+        System.out.println(sentence3.replace("hard", "easy"));
+        System.out.println(sentence3.replace("hard","fun"));
+
+
+        String sentence4="java is not same  with java";
+        System.out.println(sentence4.replaceFirst("java", "c#"));
+
+
 
 
     }
