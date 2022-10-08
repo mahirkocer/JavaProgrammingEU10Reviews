@@ -22,6 +22,5 @@ public class RedOrBlue {
             System.out.println(" ");
         }
 
-
     }
 }
