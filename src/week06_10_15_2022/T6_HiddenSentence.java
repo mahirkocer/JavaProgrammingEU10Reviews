@@ -21,7 +21,7 @@ You are the best guys
             if (ch=='.')
             break;
 
-            if ((ch>='a'&&ch<='z')|| (ch>='A'&&ch<='Z')|| ch==' ')
+            if ((ch>='a'&&ch<='z') || (ch>='A'&&ch<='Z')|| ch==' ')
                 resultSentence+=ch;
 
 
