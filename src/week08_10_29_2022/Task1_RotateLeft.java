@@ -7,7 +7,7 @@ public class Task1_RotateLeft {
     public static void main(String[] args) {
 
         /*
-        Task 1    : Write a program that accepts an array and prints an array with the elements "rotated left”
+        Task 1    : Write a program that accepts an array and prints an array with the elements "rotated left"
 
 		int[] x = {1,2,3};			 // = > [2,3,1]
 		int[] y = {17,12,10,8};		 // = > [12,10,8,17]
