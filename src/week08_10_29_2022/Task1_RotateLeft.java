@@ -14,8 +14,8 @@ public class Task1_RotateLeft {
 		int[] a = {7,0,0}; 			 // = > [0,0,7]
 
          */
-
-        int[] x = {1, 2, 3};
+                 //0  1   2
+        int[] x = {17,12,10,8};
 
 
         /*
@@ -33,6 +33,7 @@ public class Task1_RotateLeft {
             x[i] = x[i + 1];
         }
 
+        // last index
         x[x.length-1]=temp;
         System.out.println(Arrays.toString(x));
 
