@@ -17,7 +17,7 @@ public class Task2_PrimeNumber {
 
          */
 
-        boolean result = isPrime(-8); //true
+        boolean result = isPrime(2); //true
         System.out.println(result);
 
     }
@@ -26,6 +26,10 @@ public class Task2_PrimeNumber {
         boolean isPrimeNumber = true;
 
         if (number<2){
+           /*
+           isPrimeNumber=false;
+            return isPrimeNumber;
+            */
             return false;
         }
 
