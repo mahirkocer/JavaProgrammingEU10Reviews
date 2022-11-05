@@ -31,8 +31,9 @@ public class MethodsIntro {
         System.out.println(result*2);
     }
 
+
     public static int sum(int number1, int number2 ) {
-      return   number2+number1;
+      return   number1+number2;
     }
 
 
