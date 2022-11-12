@@ -20,12 +20,35 @@ public class Task4HidePasswords {
 
         String [] arr={"one", "hi", "hold"};
 
+      String [] result=  hidePassord(arr);
+
+    }
+
+    public static String[] hidePassord(String[] arr) {
+
+        String [] resultsOfHiddenPasswords=new String[arr.length];
+        int index=0;
+        //I need to get each element
+        for (String element : arr) {
+            //one
+                          //convert letter to stars
+         String result=   convertLetterToStar(element);
+            resultsOfHiddenPasswords[index++]=result;
+        }
 
 
+        return resultsOfHiddenPasswords;
+    }
 
-
-
-
+    // this method will get the string it will convert into the stars
+    public static String convertLetterToStar(String eachWord) {
+        //one
+        String temp="";
+        for (int i = 0; i < eachWord.length(); i++) {
+          //  eachWord.charAt(i);
+            temp+="*";
+        }
+        return temp;
 
     }
 }
