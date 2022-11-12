@@ -88,7 +88,7 @@ Tasks:
 
 
 
-	Task 1    : Write a program that accepts an array and prints an array with the elements "rotated left”
+	Task 1    : Write a program that accepts an array and prints an array with the elements "rotated left"
 		
 		int[] x = {1,2,3};			 // = > [2,3,1]
 		int[] y = {17,12,10,8};		 // = > [12,10,8,17] 
@@ -97,7 +97,7 @@ Tasks:
 
 	Task 2 :	Write a program that accepts string and prints multiple words in the string				
 						
-        "knife, wooden spoons, plates, cups, forks, pan, pot, trash can, fridge, dish washer”
+        "knife, wooden spoons, plates, cups, forks, pan, pot, trash can, fridge, dish washer"
          
         output : wooden spoons	
         		 trash can
@@ -116,9 +116,9 @@ Tasks:
        		 
        		 Given a String array. Find the longest Palindrome String in your array.
 			        Ex:
-			        Input: [“java”, “longer word”, “civic” “apple”, “racecar”, “mom”, “anna”] Output: racecar
+			        Input: ["java", "longer word", "civic" "apple", "racecar", "mom", "anna"] Output: racecar
 			        Ex:
-			        Input: [“abc”, “dna”, “kevin”, “joe”, “lamp”]
+			        Input: ["abc", "dna", "kevin", "joe", "lamp"]
 			        Output: No palindrome
 
 
