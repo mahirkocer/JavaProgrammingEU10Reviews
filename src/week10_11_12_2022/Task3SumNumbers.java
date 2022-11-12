@@ -29,7 +29,7 @@ public class Task3SumNumbers {
 
     }
 
-    private static int[] sumNumbers(String[] array) {
+    public static int[] sumNumbers(String[] array) {
 
         int [] result=new int[array.length];
         int index=0;
@@ -45,7 +45,7 @@ public class Task3SumNumbers {
 
     }
 
-    private static int sumDigits(int each) {
+    public static int sumDigits(int each) {
 
         /*
         24 = 2*10+4
