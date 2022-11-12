@@ -14,7 +14,7 @@ Task 6 :  Fibonacci
 				        Input:
 				            8
 				        Output:
-				            0, 1, 1, 2, 3, 5, 8, 13, 21
+				           1, 1, 2, 3, 5, 8, 13, 21
 
 				            1- Create one method and only print the numbers
 				            2- You will return the numbers
