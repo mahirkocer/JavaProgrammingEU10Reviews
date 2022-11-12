@@ -20,25 +20,25 @@ public class Task3Solution2 {
      */
 
     public static void main(String[] args) {
-        String[] array={"123", "134", "513" };
+        String[] array = {"123", "134", "513" };
 
-        int [] result=new int[array.length];
-int index=0;
+        int[] result = new int[array.length];
+        int index = 0;
         // I need to get each string
         for (String each : array) {
             System.out.println(each);
             // I need to get each digit
             String[] eachDigit = each.split("");
-            int total=0;
+            int total = 0;
             for (String s : eachDigit) {
                 // I can use parse int method
                 int i = Integer.parseInt(s);
-                total+=i;
+                total += i;
             }
 
             System.out.println(Arrays.toString(eachDigit));
             System.out.println(total);
-            result[index++]=total;
+            result[index++] = total;
 
 
         }
