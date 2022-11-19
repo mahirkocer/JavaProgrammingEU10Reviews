@@ -1,5 +1,8 @@
 package week11_11_19_2022;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Task3_GetUniqueElements {
 /*
 Task 3 :
@@ -17,7 +20,36 @@ output:
 
     public static void main(String[] args) {
 
+        int[] first = {1, 2, 3, 4, 5,5,5};
+        int[] second = {4, 5, 6,6,7,7};
 
 
+                                   //method returns the values in Arraylist
+        ArrayList<Integer> result=getUniqueElements(first,second);
+        //in order to create a method quick
+        //for mac option+enter
+        // for windows alt+enter
+
+        System.out.println(result);
+
+    }
+
+    public static ArrayList<Integer> getUniqueElements(int[] first, int[] second) {
+        ArrayList<Integer> result=new ArrayList<>();
+
+       // ArrayList<Integer> result=new ArrayList<>(Arrays.asList(first));
+
+        for (int i : first) {
+            if (!result.contains(i))
+            result.add(i);
+        }
+//result=1, 2, 3, 4, 5
+        for (int i : second) {
+            if (!result.contains(i)) // I am cheking my each element from second then I am putitng in my result if it
+                // is not in the result
+                result.add(i);
+        }
+
+        return result;
     }
 }
