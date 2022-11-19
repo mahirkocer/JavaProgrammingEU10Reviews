@@ -1,14 +1,15 @@
 package week11_11_19_2022;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayListIntro {
 
     public static void main(String[] args) {
         // how to create an arraylist
 
-        ArrayList<String> cities=new ArrayList<>();
-      //  ArrayList<String> cities=new ArrayList<String>();
+        ArrayList<String> cities = new ArrayList<>();
+        //  ArrayList<String> cities=new ArrayList<String>();
         // how to add element
         cities.add("London"); //returns boolean //0
         cities.add("Paris");  //1
@@ -22,7 +23,7 @@ public class ArrayListIntro {
 
         //how to add one lement at the begining
 
-        cities.add(0,"Vienna");
+        cities.add(0, "Vienna");
         // 0        1       2       3       4
 
         //Vienna, London, Paris, Istanbul, Rome
@@ -47,8 +48,6 @@ public class ArrayListIntro {
         System.out.println(cities.indexOf("Paris")); // if it is not exist you will get -1
 
 
-
-
         System.out.println(cities.indexOf("New")); //-1
 
         // lastIndexOf()
@@ -58,11 +57,76 @@ public class ArrayListIntro {
 
         cities.add("London");
         System.out.println(cities);
-             // 0      1         2       3      4     5
-           //Vienna, London, NewYork, Angara, Rome, London
-         System.out.println(cities.indexOf("London")); //it is checking the elemnt from beginnig and return the index
+        // 0      1         2       3      4     5
+        //Vienna, London, NewYork, Angara, Rome, London
+        System.out.println(cities.indexOf("London")); //it is checking the elemnt from beginnig and return the index
         // 1
         System.out.println(cities.lastIndexOf("London")); // it is checking the element from last //5
+
+
+        // ArrayList<int> arrayList=new ArrayList<int>(); // it will give me compile error
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(1);
+        numbers.add(1);
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(1);
+        numbers.add(1);
+
+        System.out.println(numbers);
+         //0  1  2  3  4  5  6  7   88indexes
+         //1, 1, 1, 2, 3, 4, 5, 1, 1
+
+
+        System.out.println(numbers.indexOf(1)); //0
+        System.out.println(numbers.lastIndexOf(1)); //7
+
+
+
+        ArrayList<Integer> numbers1=new ArrayList<>();
+
+        numbers1.add(2);
+        numbers1.add(3);
+        numbers1.add(4);
+        numbers1.add(5);
+        numbers1.add(1);
+        // 0  1  2  3  4
+        // 2, 3, 4, 5, 1
+        System.out.println(numbers1);
+        //how to remove element
+
+        numbers1.remove(1);// 3
+        System.out.println(numbers1);
+        Integer b=4;
+        numbers1.remove(b); // it will remove your element
+        System.out.println(numbers1);
+        numbers1.remove(new Integer(5));
+        System.out.println(numbers1);
+
+        Integer a=new Integer(4);
+
+        //bulk operations
+
+        //addAll
+
+        ArrayList<String> names=new ArrayList<>();
+
+        names.addAll(Arrays.asList("Mesut","Osman","Şeyma"));
+
+
+        //removeAll
+
+        //retainAll
+
+        //removeIf()
+        System.out.println("=================================");
+
+        System.out.println(numbers);
 
 
     }
