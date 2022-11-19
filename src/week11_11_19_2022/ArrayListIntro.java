@@ -128,6 +128,24 @@ public class ArrayListIntro {
 
         System.out.println(numbers);
 
+        for (Integer number : numbers) {
+            if (number<3)
+                numbers.remove(number); // we are not able to use like this because for each iterations the indexes  are changing
+
+        }                // each
+        numbers.removeIf(k   -> k<3);
+
+
+
+        ArrayList<Integer> number3=new ArrayList<>(Arrays.asList(1,2,3,4,5));
+
+
+      //  ArrayList<String> names4 = {"James", "Jack", "John"};
+
+
+
+
+
 
     }
 }
