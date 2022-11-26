@@ -43,6 +43,7 @@ public class Student {
     //2nd constructor: initializes name & age
     public Student(String name, int age) {
          this(name);                   // this.name = name;
+        //this() we can not use two this statement
         this.age = age;
     }
 

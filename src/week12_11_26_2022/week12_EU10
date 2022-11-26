@@ -1,0 +1,217 @@
+
+Topics:
+
+    - Connstructor Overloading
+    - Constructor Calls
+    - Creating Multiple class in a file
+    - Statics
+         * Variables
+         * Methods
+         * static import
+         * static block
+    - Garbage Collection
+    - Access Modifiers
+         * public
+         * private
+         * default
+         * protected (We will see later in OOP)
+
+
+  =============================================
+    **** Connstructor Overloading
+    **** Constructor Calls
+
+    - It is a special to initialize all instance variables with Object
+    - Connstructor  name MUST be same with ClassName
+    - DOES NOT have RETURN TYPE
+
+    Structure :         AccessModifier ClassName(Parameter){
+                        }
+
+                        ConstructorIntro(){
+                        }
+
+      Type Of Connstructor
+
+      No- Arg : - if we dont have any Connstructor,Compiler can create Connstructor with no arg
+                - if you create Connstructor with parameter, compiler does not create no arg
+
+                            public class Rectangle{
+
+                            public int length;
+                            public int width;
+                            public Rectangle(){
+                            length=5;
+                            width=4;
+                            }
+                        }
+
+      Parameterized: If you want assign values by yourself you should pass value as arg
+
+                        public class Rectangle{
+
+                            public int length;
+                            public int width;
+                            public Rectangle(int length,int width){
+                                this.length=length;
+                                this.width=width;
+                            }
+                        }
+
+       Chaining Constr  : call one constr from another One
+
+            - use this() to call another constr
+            - this () it should in FIRST LINE of Cons
+            - Can not call more than one constr
+
+      this  :  it refers current Object
+      this():  it refers current Object Constr. It can take parameter
+
+
+        Constr OverLoading
+
+        - Types - Number -Order of Parameter you can overload constructor
+
+=======================================================
+Task 1:
+
+ Class Name: Student
+
+			instance variables:
+					name, age, batchNumber
+
+			static variables :
+					school
+
+			1st constructor: initializes the name ONLY
+
+			2nd constructor: initializes name & age
+						(MUST use constructor call to set the name)
+
+			3rd Constructor: initializes name, age ,batchNumber
+						(MUST use constructor call to set the name & age)
+
+
+			instance methods: toString()
+
+
+=========================================================			
+
+Task 2:
+
+Class Name: Teacher
+
+			instance variables:
+					name, age
+
+			1st constructor: No args constr
+
+			2nd constructor: initializes the name ONLY
+
+			3rd constructor: initializes the age ONLY
+						
+			4th Constructor: initializes name, age
+						
+
+			instance methods: toString(),method1
+==========================================================
+            
+Task 3: 
+
+Class Name: ConsWorkStyle
+
+            1st constructor: No args constr
+
+			2nd constructor: get the int    (call default)
+
+			3rd constructor: get the String (call double)
+						
+			4th Constructor: get double     (call int)
+						
+
+=============================================================
+=============================================================
+
+Creating Multiple class in a file :
+
+It is only for sharing your solutions. Therefore please do not put your class in file other than that
+
+
+=============================================================
+=============================================================
+
+    ***** Statics
+
+instance: belong to the object 
+
+each object has its own copy of the instances (can have multiple copies)
+
+static: belongs to the class.
+
+There is only one copy os statics thta's shared by all objects of the class
+
+
+         * Variables (if the attribute is common for all objects)
+
+           Example: Eating same cake slices   
+         
+         * Methods
+         * static import
+
+            - static import vs regular import
+              regular import: imports everything from the class : import packageName.className;
+              import everything: import packageName.*;
+
+
+              import static packageName.className.staticMember;  // imports one static member of a class
+              import static packageName.className.*;  // imports all static members of a class
+
+         * static block
+
+           
+           - RUN ONLY ONCE before everything when class is loaded
+           - if you have a file, if you should take all data from here you should use
+
+
+=============================================================
+=============================================================
+    
+    ***** Garbage Collection
+
+           Collection of unreferenced objects 
+
+          ** Garbage Collector: responsible for collecting the unreferenced objects from java heap. and destroys it
+
+            (it is automaticaly a part of JVM)
+            Garbage collector is using finalize() method.
+            -- unreferenced objects:
+
+              1. null keyword:
+
+                 String str = "Java";
+                 str = null; (eligible to garbace collector)
+
+              2. creating a new object
+
+              String str = "Java"; 
+              str = "Python"; ("Java" is eligible to gc)
+
+=============================================================
+=============================================================
+   
+    ***** Access Modifiers : define the accessibility
+
+        --- public > protected > default > private
+
+      private: ONLY reachable within the same class
+
+      default: ONLY reachable within the same package
+
+      public: ALWAYS rechable
+
+
+
+
+
+
+
