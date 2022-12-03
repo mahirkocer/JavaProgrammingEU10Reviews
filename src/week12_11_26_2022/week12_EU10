@@ -173,42 +173,6 @@ There is only one copy os statics thta's shared by all objects of the class
            - if you have a file, if you should take all data from here you should use
 
 
-=============================================================
-=============================================================
-    
-    ***** Garbage Collection
-
-           Collection of unreferenced objects 
-
-          ** Garbage Collector: responsible for collecting the unreferenced objects from java heap. and destroys it
-
-            (it is automaticaly a part of JVM)
-            Garbage collector is using finalize() method.
-            -- unreferenced objects:
-
-              1. null keyword:
-
-                 String str = "Java";
-                 str = null; (eligible to garbace collector)
-
-              2. creating a new object
-
-              String str = "Java"; 
-              str = "Python"; ("Java" is eligible to gc)
-
-=============================================================
-=============================================================
-   
-    ***** Access Modifiers : define the accessibility
-
-        --- public > protected > default > private
-
-      private: ONLY reachable within the same class
-
-      default: ONLY reachable within the same package
-
-      public: ALWAYS rechable
-
 
 
 
