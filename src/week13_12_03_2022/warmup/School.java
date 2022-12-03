@@ -19,9 +19,9 @@ public class School {
     7. create a methot in School class then find the teachers born in 1967 year
 
      */
-   static ArrayList<Teacher> teachers = new ArrayList<>();
+    static ArrayList<Teacher> teachers = new ArrayList<>();
 
-   static String school="Cydeo";
+
     static {
 
         Teacher teacher1 = new Teacher("Muhtar", "Abc", 'M', LocalDate.of(1987, 1, 1), 1L);
@@ -37,6 +37,30 @@ public class School {
     }
 
     public static void main(String[] args) {
+        System.out.println(teachers);
+
+        ArrayList<Teacher> result = getTeachersNameStartWith("M");
+
+        System.out.println(result);
+    }
+
+    private static ArrayList<Teacher> getTeachersNameStartWith(String prefix) {
+
+        ArrayList<Teacher> result = new ArrayList<>();
+
+
+             //I need to get teacher one by one
+        for (Teacher teacher : teachers) {
+
+            // I need to check the name if the name is starting with "M"
+            if (teacher.name.startsWith(prefix))
+
+                //I will put inside result
+                result.add(teacher);
+
+        }
+        return result;
+
 
     }
 
