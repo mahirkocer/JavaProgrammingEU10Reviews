@@ -6,6 +6,8 @@ public class TestPerson {
 
         System.out.println("person.getBirthDay() = " + person.getBirthDay());
         System.out.println("person = " + person);
+
+
     }
 
 
