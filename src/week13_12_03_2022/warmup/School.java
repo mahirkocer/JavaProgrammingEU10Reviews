@@ -45,6 +45,36 @@ public class School {
 
         ArrayList<Teacher> females = getTeachersByGender('F');
         System.out.println(females);
+
+        ArrayList<Teacher> age = ageSmalllerThan30();
+        System.out.println(age);
+
+        ArrayList<Teacher> born = getBorninGivenYear(1967);
+        System.out.println(born);
+    }
+
+    private static ArrayList<Teacher> getBorninGivenYear(int year) {
+      ArrayList<Teacher> born = new ArrayList<>();
+
+        for (Teacher teacher : teachers) {
+            if (teacher.dateOfBirth.getYear() ==year){
+                born.add(teacher);
+            }
+        }
+        return born;
+
+    }
+
+    private static ArrayList<Teacher> ageSmalllerThan30() {
+      ArrayList<Teacher> age = new ArrayList<>();
+
+        for (Teacher teacher : teachers) {
+            if (teacher.age>30){
+               age.add(teacher);
+            }
+
+        }
+        return age;
     }
 
     private static ArrayList<Teacher> getTeachersByGender(char gender) {
